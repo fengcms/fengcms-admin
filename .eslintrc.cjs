@@ -1,5 +1,4 @@
-// @ts-check
-const { defineConfig } = require('eslint-define-config');
+const { defineConfig } = require('eslint-define-config')
 module.exports = defineConfig({
   root: true,
   env: {
@@ -27,6 +26,7 @@ module.exports = defineConfig({
     'vue/script-setup-uses-vars': 'error',
     'vue/multi-word-component-names': 'off',
     '@typescript-eslint/ban-ts-ignore': 'off',
+    'prettier/prettier': ['error', { semi: false }],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 'off',
@@ -68,4 +68,4 @@ module.exports = defineConfig({
       },
     ],
   },
-});
+})
